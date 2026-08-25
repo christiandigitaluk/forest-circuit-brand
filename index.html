@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Guidelines &middot; Forest Methodist Circuit</title>
+<meta name="description" content="The identity system for Forest Methodist Circuit: mark, colour, type, voice, imagery and layout, and how they apply across print, email, social media, worship slides and signage.">
+<!-- An internal reference for the circuit and its suppliers, not a page that
+     wants to rank. Delete this line (and robots.txt) to let it be indexed. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://brand.forestcircuit.co.uk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Forest Methodist Circuit">
+<meta property="og:url" content="https://brand.forestcircuit.co.uk/">
+<meta property="og:title" content="Brand Guidelines &middot; Forest Methodist Circuit">
+<meta property="og:description" content="The identity system for Forest Methodist Circuit: mark, colour, type, voice, imagery and layout.">
+<meta property="og:image" content="https://brand.forestcircuit.co.uk/images/og-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Forest Methodist Circuit mark, white on forest green">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b7a46" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c2b22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="images/logo-green.png" type="image/png">
+<link rel="apple-touch-icon" href="images/logo-green.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink-900: #1c2b22;
+  --ink-800: #223429;
+  --ink-600: #4a5a4f;
+  --ink-400: #7a897f;
+  --forest-700: #1b7a46;
+  --forest-600: #156638;
+  --forest-100: #def3e4;
+  --orange-500: #f2803d;
+  --orange-100: #fde3cf;
+  --cream-50: #fbf8f1;
+  --cream-100: #f2eddf;
+  --white: #ffffff;
+  --line-200: #e6e0d0;
+
+  --bg: var(--cream-50);
+  --surface: var(--white);
+  --surface-tint: var(--forest-100);
+  --text-heading: var(--ink-800);
+  --text-body: var(--ink-600);
+  --text-muted: var(--ink-400);
+  --text-inverse: var(--cream-50);
+  --accent: var(--forest-700);
+  --accent-hover: var(--forest-600);
+  --line: var(--line-200);
+  --swatch-border: rgba(28, 43, 34, 0.12);
+
+  --font-display: "Baloo 2", -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Instrument Sans", -apple-system, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--ink-900);
+    --surface: var(--ink-800);
+    --surface-tint: #24422f;
+    --text-heading: var(--cream-50);
+    --text-body: #cdd6cf;
+    --text-muted: #8fa192;
+    --text-inverse: var(--ink-900);
+    --accent: #3fae76;
+    --accent-hover: #59c48d;
+    --line: #37473c;
+    --swatch-border: rgba(251, 248, 241, 0.14);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: var(--ink-900);
+  --surface: var(--ink-800);
+  --surface-tint: #24422f;
+  --text-heading: var(--cream-50);
+  --text-body: #cdd6cf;
+  --text-muted: #8fa192;
+  --text-inverse: var(--ink-900);
+  --accent: #3fae76;
+  --accent-hover: #59c48d;
+  --line: #37473c;
+  --swatch-border: rgba(251, 248, 241, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  margin: 0;
+}
+
+p { margin: 0; }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+
+/* ---------- Cover ---------- */
+.cover {
+  padding: 88px 0 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+.cover-mark {
+  width: 76px;
+  height: 76px;
+  border-radius: 999px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--text-heading);
+  box-shadow: 4px 4px 0 var(--text-heading);
+}
+.cover-mark img { width: 46px; height: 46px; display: block; }
+.cover h1 { font-size: clamp(36px, 5.5vw, 56px); }
+.cover .kicker {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+.cover .dek {
+  max-width: 62ch;
+  font-size: 18px;
+  color: var(--text-body);
+}
+.scope-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.scope-pill {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12.5px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  color: var(--text-body);
+}
+
+/* ---------- Section scaffolding ---------- */
+section {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+}
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.section-head h2 { font-size: 28px; }
+.section-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+.lede {
+  max-width: 68ch;
+  color: var(--text-body);
+  margin-bottom: 28px;
+  font-size: 16px;
+}
+
+/* ---------- Logo ---------- */
+.logo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 720px) { .logo-grid { grid-template-columns: 1fr; } }
+.logo-tile {
+  /* Pinned to ink, not var(--text-heading): that flips to cream in dark
+     mode, leaving a cream border around a cream tile. */
+  border: 2px solid var(--ink-900);
+  border-radius: 14px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  position: relative;
+}
+.logo-tile.on-cream { background: var(--cream-100); }
+.logo-tile.on-forest { background: var(--forest-700); }
+.logo-tile img { width: 120px; height: 120px; display: block; }
+.logo-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+.logo-caption strong { color: var(--text-body); font-weight: 600; }
+
+.dont-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+@media (max-width: 640px) { .dont-grid { grid-template-columns: 1fr; } }
+/* Specimen surfaces are pinned to the light palette in both themes. These
+   panels exist to show the ink mark as it appears on cream or white, and
+   the ink mark is #1c2b22, so on a dark-mode surface it disappeared into the
+   background. A specimen has to show the colours being specified, the same
+   reason the swatches print their true hex whatever the page is doing. */
+.dont-tile {
+  border: 1.5px dashed rgba(28, 43, 34, 0.22);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  min-height: 110px;
+}
+.dont-tile img { width: 56px; height: 56px; opacity: 0.9; }
+.dont-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 8px;
+}
+.stretch img { transform: scaleX(1.7); }
+.recolor img { filter: sepia(1) hue-rotate(200deg) saturate(3); }
+.lowcontrast { background: var(--cream-100); }
+.lowcontrast img { filter: brightness(0) saturate(100%) invert(90%) sepia(8%) saturate(300%); opacity: 0.35; }
+
+/* ---------- Clear space ---------- */
+.clearspace-tile {
+  border: 2px dashed rgba(28, 43, 34, 0.22);
+  border-radius: 14px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  max-width: 280px;
+  position: relative;
+}
+.clearspace-tile img { width: 88px; height: 88px; display: block; }
+.clearspace-tile .cs-x {
+  position: absolute;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+/* These marks sat straight on the page ground with nothing behind them,
+   so in dark mode there was an ink logo on an ink background. The row
+   becomes its own light panel for the same reason as the tiles above. */
+.min-size-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 28px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  background: var(--white);
+  border: 1px solid rgba(28, 43, 34, 0.12);
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+.min-size-row .ms-item { text-align: center; }
+.min-size-row img { display: block; }
+.min-size-row .ms-label {
+  font-size: 12.5px;
+  /* Fixed rather than var(--text-muted): the panel stays light, so a
+     dark-theme muted colour would be washed out on it. */
+  color: rgba(28, 43, 34, 0.6);
+  margin-top: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.rule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 60ch;
+}
+.rule-list li { font-size: 15px; color: var(--text-body); }
+.two-col {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+
+/* ---------- Color ---------- */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+@media (max-width: 720px) { .swatch-grid { grid-template-columns: repeat(2, 1fr); } }
+.swatch {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--swatch-border);
+  background: var(--surface);
+}
+.swatch-color { height: 84px; }
+.swatch-info { padding: 10px 12px 12px; }
+.swatch-name { font-weight: 600; font-size: 13.5px; color: var(--text-heading); }
+.swatch-hex {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.swatch-cmyk {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2px;
+}
+.swatch-use { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.group-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 28px 0 12px;
+}
+.group-label:first-child { margin-top: 0; }
+.print-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--orange-500);
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  max-width: 68ch;
+}
+
+/* ---------- Type ---------- */
+.type-block { margin-bottom: 36px; }
+.type-role {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.type-role .name { font-weight: 700; color: var(--text-heading); font-size: 15px; }
+.type-role .tag {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.type-sample-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 44px;
+  letter-spacing: -0.01em;
+  color: var(--text-heading);
+  line-height: 1.1;
+}
+.type-sample-body {
+  font-family: var(--font-sans);
+  font-size: 19px;
+  color: var(--text-body);
+  max-width: 60ch;
+}
+.type-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+.weight-row { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 14px; }
+.weight-row span { font-family: var(--font-display); font-size: 15px; color: var(--text-heading); }
+
+.eyebrow-demo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+/* ---------- Voice ---------- */
+.voice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 640px) { .voice-grid { grid-template-columns: 1fr; } }
+.voice-card {
+  border-radius: 12px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.voice-card .label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.voice-do .label { color: var(--accent); }
+.voice-dont .label { color: var(--orange-500); }
+.voice-card p { font-size: 14.5px; color: var(--text-body); }
+.voice-card p + p { margin-top: 8px; }
+
+.tagline-block {
+  text-align: left;
+  padding: 32px 0;
+}
+.tagline-block .tagline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--text-heading);
+}
+.tagline-block .tagline-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* ---------- Photography ---------- */
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+@media (max-width: 640px) { .photo-grid { grid-template-columns: 1fr; } }
+.photo-card {
+  border-radius: 12px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.photo-card .label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+.photo-card p { font-size: 14.5px; color: var(--text-body); }
+.safeguard-note {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--orange-500);
+  background: var(--surface-tint);
+  border-radius: 0 10px 10px 0;
+  font-size: 14.5px;
+  color: var(--text-body);
+  max-width: 68ch;
+}
+.safeguard-note strong { color: var(--text-heading); }
+
+/* Two-lane imagery system: the watercolour lane and the photographic
+   lane, each shown with a real example from the site so the difference
+   is visible rather than described. */
+.lane {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+  margin-bottom: 18px;
+}
+.lane-fig {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+.lane-body { padding: 18px 20px; }
+.lane-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 11px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+.lane-tag.wc { background: var(--forest-100); color: var(--forest-700); }
+.lane-tag.photo { background: var(--orange-100); color: #9a4a15; }
+.lane h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+.lane-use {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.lane-body p { font-size: 14.5px; color: var(--text-body); max-width: 62ch; }
+.lane-body p + p { margin-top: 8px; }
+
+/* ---------- The Idea ---------- */
+.thesis {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, 3.4vw, 34px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: var(--text-heading);
+  max-width: 20ch;
+  margin: 0 0 20px;
+}
+.thesis em { font-style: normal; color: var(--accent); }
+.principle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 28px;
+}
+@media (max-width: 640px) { .principle-grid { grid-template-columns: 1fr; } }
+.principle {
+  border-top: 2px solid var(--accent);
+  padding-top: 14px;
+}
+.principle h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.principle p { font-size: 14px; color: var(--text-body); }
+
+/* ---------- Contrast table ---------- */
+.contrast-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.contrast-table th {
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 0 8px 9px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+}
+.contrast-table td {
+  padding: 9px 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-body);
+  vertical-align: middle;
+}
+.contrast-table tr:last-child td { border-bottom: none; }
+.contrast-table .num {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-heading);
+  white-space: nowrap;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 108px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--swatch-border);
+  white-space: nowrap;
+}
+.verdict {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.verdict.pass { background: var(--forest-100); color: var(--forest-700); }
+.verdict.fail { background: var(--orange-100); color: #9a4a15; }
+
+/* ---------- Voice rewrites ---------- */
+.rewrite {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+  margin-bottom: 14px;
+}
+.rewrite-row { padding: 15px 18px; }
+.rewrite-row + .rewrite-row { border-top: 1px solid var(--line); }
+.rewrite-row.before { background: var(--surface); }
+.rewrite-row.after { background: var(--forest-100); }
+.rewrite-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 6px;
+}
+.rewrite-row.before .rewrite-label { color: var(--text-muted); }
+.rewrite-row.after .rewrite-label { color: var(--forest-700); }
+.rewrite-text { font-size: 14.5px; color: var(--text-heading); }
+.rewrite-why {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 7px;
+  max-width: 64ch;
+}
+
+/* ---------- Layout & grid ---------- */
+.grid-demo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 6px;
+  margin: 4px 0 10px;
+}
+.grid-demo span {
+  height: 46px;
+  background: var(--forest-100);
+  border-radius: 2px;
+}
+.measure-demo {
+  border-left: 2px solid var(--accent);
+  padding-left: 14px;
+  font-size: 14.5px;
+  color: var(--text-body);
+  max-width: 65ch;
+  margin-top: 6px;
+}
+.spacing-row { display: flex; align-items: flex-end; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
+.spacing-row div { text-align: center; }
+.spacing-row .bar { background: var(--accent); border-radius: 2px; width: 26px; }
+.spacing-row .lbl {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 10.5px; color: var(--text-muted); margin-top: 5px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Components ---------- */
+.component-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 28px;
+  background: var(--surface-tint);
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+.btn {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 2px solid var(--ink-900);
+  cursor: default;
+}
+.btn-primary {
+  background: var(--forest-700);
+  color: var(--cream-50);
+  box-shadow: 4px 4px 0 var(--ink-900);
+}
+.btn-secondary {
+  background: var(--white);
+  color: var(--ink-900);
+  box-shadow: 4px 4px 0 var(--ink-900);
+}
+.badge-pill {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: var(--orange-500);
+  color: var(--ink-900);
+  border: 2px solid var(--ink-900);
+}
+.component-note { font-size: 13px; color: var(--text-muted); margin-top: -4px; margin-bottom: 20px; }
+
+/* ---------- Applied / Beyond the website ---------- */
+.applied-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  background: var(--surface);
+}
+.applied-card .applied-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.applied-body { padding: 22px 20px; }
+
+/* Every colour below is hardcoded because this is a picture of an email as
+   it will actually arrive, not themed UI. That means it needs its own white
+   ground: on a dark-mode card the whole signature vanished. */
+.email-sig {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333333;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid rgba(28, 43, 34, 0.12);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+.email-sig .sig-mark {
+  width: 56px; height: 56px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.email-sig .sig-mark img { width: 56px; height: 56px; }
+.email-sig .sig-name { font-weight: 700; font-size: 15px; color: #1c2b22; }
+.email-sig .sig-role { color: #4a5a4f; margin-top: 2px; }
+.email-sig .sig-org { color: #1b7a46; font-weight: 700; margin-top: 8px; }
+.email-sig .sig-contact { color: #4a5a4f; margin-top: 4px; }
+.email-sig .sig-contact a { color: #1b7a46; text-decoration: none; }
+
+.print-mock {
+  aspect-ratio: 210 / 297;
+  max-width: 220px;
+  background: var(--cream-50);
+  border: 1px solid var(--swatch-border);
+  border-radius: 4px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(20,33,26,0.12);
+  flex-shrink: 0;
+}
+.print-mock .p-mark { width: 30px; height: 30px; border-radius: 999px; background: var(--forest-700); }
+.print-mock .p-line { height: 5px; background: var(--line-200); border-radius: 2px; }
+.print-mock .p-line.w60 { width: 60%; }
+.print-mock .p-line.w80 { width: 80%; }
+.print-mock .p-line.w40 { width: 40%; margin-top: 12px; }
+.print-mock .p-accent { width: 24%; height: 3px; background: var(--orange-500); border-radius: 2px; margin-top: 10px; }
+
+.mock-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+
+.avatar-mock {
+  width: 96px; height: 96px;
+  border-radius: 999px;
+  background: var(--forest-700);
+  border: 3px solid var(--ink-900);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.avatar-mock img { width: 56px; height: 56px; }
+.cover-mock {
+  width: 220px; height: 82px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--forest-700), var(--forest-600));
+  border: 1px solid var(--swatch-border);
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 16px;
+  flex-shrink: 0;
+}
+.cover-mock img { width: 32px; height: 32px; }
+.cover-mock span {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--cream-50);
+}
+
+.slide-mock {
+  width: 260px; height: 146px;
+  background: var(--ink-900);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 22px;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.slide-mock .sl-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange-500);
+}
+.slide-mock .sl-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--cream-50);
+  line-height: 1.15;
+}
+
+.board-mock {
+  width: 180px; height: 240px;
+  background: var(--forest-700);
+  border-radius: 6px;
+  border: 4px solid var(--ink-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.board-mock img { width: 48px; height: 48px; }
+.board-mock span {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--cream-50);
+  text-align: center;
+  padding: 0 12px;
+}
+
+.code-box {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12.5px;
+  background: var(--ink-900);
+  color: #d9e6dc;
+  border-radius: 10px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+.code-box .tag { color: #7fbf9a; }
+.code-box .attr { color: #e6c07b; }
+.code-box .str { color: #d19a66; }
+
+/* ---------- Assets table ---------- */
+.asset-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.asset-table th {
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 0 12px 10px;
+  border-bottom: 1px solid var(--line);
+}
+.asset-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-body);
+  vertical-align: top;
+}
+.asset-table tr:last-child td { border-bottom: none; }
+.asset-table .fname { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; color: var(--text-heading); }
+
+/* ---------- Governance ---------- */
+.gov-row {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 8px;
+}
+.gov-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.gov-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 20px;
+}
+.gov-item p { font-size: 14.5px; color: var(--text-body); }
+
+footer {
+  padding: 40px 0 0;
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 18px 72px; }
+  .swatch-grid { gap: 10px; }
+  .mock-row { gap: 16px; }
+}
+</style>
+<style>
+/* ---------- Standalone-site chrome ----------
+   Only the pieces a hosted page needs and an artifact does not: the sticky
+   section bar, the skip link, and a print stylesheet so someone who hits
+   Cmd+P on the web page still gets something sane rather than the nav. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: var(--cream-50);
+  padding: 10px 16px;
+  border-radius: 0 0 8px 0;
+  z-index: 100;
+  font-weight: 600;
+}
+.skip:focus { left: 0; }
+
+.sitebar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.sitebar-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 54px;
+}
+.sitebar .mark {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-heading);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.sitebar .mark img { width: 22px; height: 22px; display: block; }
+.sitebar nav {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+}
+.sitebar nav a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-body);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.sitebar nav a:hover { background: var(--surface-tint); color: var(--text-heading); }
+.sitebar nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.sitebar nav a .n {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 10.5px;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Contents menu ----
+   Laid out inline the eleven sections need a 1313px viewport; below that
+   the strip silently clipped the last few with nothing to say they were
+   there. A 1280px laptop is squarely inside that gap, so anything narrower
+   than the true fit width gets a menu instead: nothing is ever hidden, and
+   the trigger doubles as a "you are here" readout. */
+.contents-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  padding: 7px 12px;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-heading);
+  cursor: pointer;
+  max-width: 60vw;
+}
+.contents-btn:hover { background: var(--surface-tint); }
+.contents-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.contents-btn .cb-num {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.contents-btn .cb-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contents-btn .cb-chev {
+  font-size: 9px;
+  color: var(--text-muted);
+  transition: transform 140ms ease;
+}
+.contents-btn[aria-expanded="true"] .cb-chev { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .contents-btn .cb-chev { transition: none; } }
+
+/* The menu is the nav at every width, not a small-screen fallback. The bar
+   is capped at 920px so it lines up with the text column, and eleven
+   inline chips need roughly 1320px of bar, so the strip could never fit,
+   even on a 4K display. One consistent control beats a layout that works
+   only above a width most people never use. */
+.sitebar-inner { position: relative; }
+.sitebar nav {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: 0;
+  min-width: 260px;
+  max-width: min(340px, calc(100vw - 32px));
+  flex-direction: column;
+  gap: 1px;
+  margin: 0;
+  padding: 7px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(20, 33, 26, 0.16);
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
+}
+.sitebar nav[hidden] { display: none; }
+.sitebar nav a {
+  min-height: 44px;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.sitebar nav a .n { min-width: 20px; }
+.bar-actions { margin-left: 8px; }
+
+@media (max-width: 860px) { .sitebar-inner { padding: 0 18px; } }
+
+/* Anchored sections must clear the sticky bar when jumped to. */
+.wrap > section { scroll-margin-top: 68px; }
+
+.sitefoot {
+  border-top: 1px solid var(--line);
+  margin-top: 8px;
+}
+.sitefoot-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 26px 24px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.sitefoot a { color: var(--text-muted); text-decoration: underline; }
+.sitefoot a:hover { color: var(--accent); }
+
+/* Tables get their own scroll rail rather than pushing the page sideways. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -2px;
+  padding: 0 2px;
+}
+.table-scroll:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.table-scroll table { min-width: 460px; }
+
+/* Reading progress: a long single-page document gives no sense of length,
+   and a scrollbar alone is easy to miss on a trackpad. */
+.progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--accent);
+  z-index: 60;
+  transition: width 120ms linear;
+}
+@media (prefers-reduced-motion: reduce) { .progress { transition: none; } }
+
+/* Active section, so the reader keeps their place across eleven sections. */
+.sitebar nav a.is-active {
+  background: var(--surface-tint);
+  color: var(--text-heading);
+}
+.sitebar nav a.is-active .n { color: var(--accent); }
+
+.bar-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.iconbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-body);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+}
+.iconbtn:hover { background: var(--surface-tint); color: var(--text-heading); }
+.iconbtn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* Copying a hex value is the single thing people open a brand guide to do,
+   so every swatch is a copy target rather than something to transcribe. */
+.swatch-hex {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  padding: 2px 5px;
+  margin: -2px -5px;
+  border-radius: 4px;
+  font: inherit;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  -webkit-user-select: all;
+  user-select: all;
+}
+.swatch-hex:hover { background: var(--surface-tint); color: var(--text-heading); }
+.swatch-hex:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.swatch-hex::after {
+  content: "copy";
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.swatch-hex:hover::after, .swatch-hex:focus-visible::after { opacity: 0.75; }
+.swatch-hex.copied::after { content: "copied"; opacity: 1; }
+
+.copy-code {
+  position: absolute;
+  top: 10px; right: 10px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.08);
+  color: #d9e6dc;
+  cursor: pointer;
+}
+.copy-code:hover { background: rgba(255,255,255,0.16); }
+.copy-code:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.code-wrap { position: relative; }
+
+.totop {
+  position: fixed;
+  right: 18px; bottom: 18px;
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text-heading);
+  box-shadow: 0 4px 16px rgba(20,33,26,0.14);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 160ms ease;
+  z-index: 55;
+}
+.totop.show { opacity: 1; pointer-events: auto; }
+.totop:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .totop { transition: none; } }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  /* 32px chips were below a comfortable tap target. */
+  .iconbtn { width: 44px; height: 44px; }
+  .contents-btn { min-height: 44px; }
+  .sitebar-inner { min-height: 56px; gap: 10px; }
+  .sitebar .mark span { display: none; }
+  .wrap > section { scroll-margin-top: 70px; }
+  .totop { right: 12px; bottom: 12px; }
+  /* The worship-slide mock dropped to 9px, below anything readable. */
+  .slide-mock .sl-eyebrow { font-size: 10.5px; }
+  .cover .dek { font-size: 17px; }
+}
+@media (max-width: 420px) {
+  .swatch-grid { grid-template-columns: 1fr 1fr; }
+  .min-size-row { gap: 18px; }
+}
+
+@media print {
+  .sitebar, .skip, .sitefoot, .totop, .progress, .copy-code { display: none !important; }
+  .wrap { max-width: none; padding: 0; }
+  .table-scroll { overflow: visible; }
+  .table-scroll table { min-width: 0; }
+  .swatch-hex::after { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" role="presentation"></div>
+
+<header class="sitebar">
+  <div class="sitebar-inner">
+    <a class="mark" href="#top"><img src="images/logo-green.png" alt=""><span>Forest Circuit</span></a>
+    <button class="contents-btn" type="button" aria-expanded="false" aria-controls="sectionnav">
+      <span class="cb-num" aria-hidden="true">01</span>
+      <span class="cb-label">The Idea</span>
+      <span class="cb-chev" aria-hidden="true">&#9660;</span>
+    </button>
+    <nav id="sectionnav" aria-label="Sections">
+      <a href="#the-idea"><span class="n">01</span>The Idea</a>
+      <a href="#the-mark"><span class="n">02</span>The Mark</a>
+      <a href="#colour"><span class="n">03</span>Colour</a>
+      <a href="#type"><span class="n">04</span>Type</a>
+      <a href="#voice"><span class="n">05</span>Voice</a>
+      <a href="#imagery"><span class="n">06</span>Imagery</a>
+      <a href="#layout"><span class="n">07</span>Layout</a>
+      <a href="#applied-style"><span class="n">08</span>Applied Style</a>
+      <a href="#beyond-the-website"><span class="n">09</span>Beyond the Website</a>
+      <a href="#files"><span class="n">10</span>Files</a>
+      <a href="#keeping-this-current"><span class="n">11</span>Keeping This Current</a>
+    </nav>
+    <div class="bar-actions">
+      <button class="iconbtn" type="button" data-theme-toggle aria-label="Switch theme">&#9790;</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap" id="top">
+
+  <div class="cover">
+    <div class="cover-mark"><img src="images/logo-white.png" alt=""></div>
+    <div>
+      <div class="kicker">Forest Methodist Circuit</div>
+      <h1>Brand Guidelines</h1>
+    </div>
+    <p class="dek">
+      The reference for how the circuit's own identity, mark, colour, type, voice and photography, should look
+      and read wherever it turns up. Not a website style sheet: this covers every surface the circuit itself
+      puts its name on, digital and physical, from the website to a printed noticeboard.
+    </p>
+    <div class="scope-row">
+      <span class="scope-pill">Website</span>
+      <span class="scope-pill">Email</span>
+      <span class="scope-pill">Print &amp; letterhead</span>
+      <span class="scope-pill">Social media</span>
+      <span class="scope-pill">Worship slides</span>
+      <span class="scope-pill">Noticeboards &amp; signage</span>
+      <span class="scope-pill">Merchandise</span>
+    </div>
+  </div>
+
+  <section id="the-idea">
+    <div class="section-head">
+      <h2>The Idea</h2>
+      <span class="section-num">01 · Position</span>
+    </div>
+    <p class="thesis">
+      Ten churches that had ten front doors. <em>Now there is one.</em>
+    </p>
+    <p class="lede">
+      Forest Circuit is not a single congregation and this identity does not pretend otherwise. It is a team
+      ministry of ten churches, each with its own building, its own history and its own Sunday. What the
+      identity does is give them one recognisable way of speaking, so that a visitor who finds Leytonstone and
+      a visitor who finds Loughton know they have arrived at the same organisation.
+    </p>
+    <p class="lede" style="margin-bottom:0;">
+      Every decision in this document follows from that: the mark is a circle left deliberately open, the
+      palette is warm rather than corporate, the voice invites rather than notifies, and the churches are
+      painted rather than photographed for the warmth that brings, letting ten very different buildings sit
+      together on one page.
+    </p>
+
+    <div class="principle-grid">
+      <div class="principle">
+        <h3>One circuit, ten doors</h3>
+        <p>The circuit is the parent organisation, not a rebrand authority. This identity belongs to what the
+        circuit itself produces; individual churches are free to run their own name and their own
+        communications alongside it.</p>
+      </div>
+      <div class="principle">
+        <h3>Warm, not corporate</h3>
+        <p>Rounded type, cream grounds, hand-drawn edges. If a choice reads as a bank or a council, it is the
+        wrong choice.</p>
+      </div>
+      <div class="principle">
+        <h3>Invite, don't notify</h3>
+        <p>The default register is an open door, not a list of conditions. Rules exist, but they are never the
+        first thing said.</p>
+      </div>
+      <div class="principle">
+        <h3>Legible before beautiful</h3>
+        <p>Contrast, minimum sizes and clear space are stated as numbers in this book. Where the two conflict,
+        legibility wins.</p>
+      </div>
+    </div>
+
+    <div class="safeguard-note" style="border-left-color: var(--forest-700); margin-top:30px;">
+      <strong>Who this document is for.</strong> The circuit is the parent organisation of the ten churches, not
+      the other way round, and this identity governs what the circuit itself produces: the website,
+      circuit-wide print and email, the circuit's own social channels, staff signatures. A church's own
+      noticeboard, newsletter or social account is its own, and is under no obligation to carry this identity.
+      If a church chooses to use it, for a circuit-run event at their building, say, the rest of this book
+      applies; if they don't, that's their call to make.
+    </div>
+  </section>
+
+  <section id="the-mark">
+    <div class="section-head">
+      <h2>The Mark</h2>
+      <span class="section-num">02 · Logo</span>
+    </div>
+    <p class="lede">
+      A single continuous line: the letters "fm" for Forest Methodist, drawn in one stroke inside an
+      almost-closed circle. That outer ring does double duty: it reads as a "C" for Circuit as well as the
+      circuit itself, and its small opening is deliberate, since a circuit is not a closed loop.
+    </p>
+
+    <div class="logo-grid">
+      <div>
+        <div class="logo-tile on-cream"><img src="images/logo-ink.png" alt="Forest Circuit mark, ink"></div>
+        <div class="logo-caption"><strong>Ink</strong><span>on cream or white</span></div>
+        <div class="logo-caption"><span>&nbsp;</span><span>#1c2b22</span></div>
+      </div>
+      <div>
+        <div class="logo-tile on-forest"><img src="images/logo-white.png" alt="Forest Circuit mark, reversed"></div>
+        <div class="logo-caption"><strong>Reversed</strong><span>on forest green</span></div>
+        <div class="logo-caption"><span>&nbsp;</span><span>#1b7a46</span></div>
+      </div>
+      <div>
+        <div class="logo-tile on-cream"><img src="images/logo-green.png" alt="Forest Circuit mark, green"></div>
+        <div class="logo-caption"><strong>Green</strong><span>on white, signatures only</span></div>
+        <div class="logo-caption"><span>&nbsp;</span><span>#1b7a46</span></div>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:40px;">Clear space &amp; minimum size</div>
+    <div class="two-col">
+      <div class="clearspace-tile">
+        <img src="images/logo-ink.png" alt="">
+      </div>
+      <div>
+        <p class="lede" style="margin-bottom:16px;">
+          Keep a margin at least as wide as the circle's own radius clear on every side, no text, no edge of a
+          page, no other logo inside that ring. On a crowded noticeboard or a busy social post, give it more room
+          if you can spare it, not less.
+        </p>
+        <div class="min-size-row">
+          <div class="ms-item">
+            <img src="images/logo-ink.png" alt="" style="width:64px;height:64px;">
+            <div class="ms-label">64px min · screen</div>
+          </div>
+          <div class="ms-item">
+            <img src="images/logo-ink.png" alt="" style="width:24px;height:24px;">
+            <div class="ms-label">10mm min · print</div>
+          </div>
+          <div class="ms-item">
+            <img src="images/logo-ink.png" alt="" style="width:14px;height:14px;">
+            <div class="ms-label">✕ too small to read</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:40px;">Don't</div>
+    <div class="dont-grid">
+      <div>
+        <div class="dont-tile stretch"><img src="images/logo-ink.png" alt=""></div>
+        <div class="dont-label">Stretch or distort the circle</div>
+      </div>
+      <div>
+        <div class="dont-tile recolor"><img src="images/logo-ink.png" alt=""></div>
+        <div class="dont-label">Recolour outside ink, white, or forest green</div>
+      </div>
+      <div>
+        <div class="dont-tile lowcontrast"><img src="images/logo-ink.png" alt=""></div>
+        <div class="dont-label">Place on low-contrast backgrounds</div>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:40px;">Appearing alongside another logo</div>
+    <p class="lede" style="margin-bottom:0;">
+      When the mark sits next to a church's own noticeboard, a hired venue's signage, or the wider Methodist
+      Church, give both marks equal visual weight and the same clear space either logo is entitled to on its
+      own; a simple vertical rule or equivalent gap between the two is enough to separate them. Never place the
+      circuit mark inside another organisation's lockup or resize it smaller than a logo it's paired with.
+    </p>
+  </section>
+
+  <section id="colour">
+    <div class="section-head">
+      <h2>Colour</h2>
+      <span class="section-num">03 · Palette</span>
+    </div>
+    <p class="lede">
+      Forest green carries the brand; orange is used sparingly as a single accent. Cream and white are the only
+      page grounds; the palette never runs on a dark background except the footer and the reversed mark.
+    </p>
+
+    <div class="group-label">Primary</div>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1B7A46;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Forest 700</div>
+          <div class="swatch-hex">#1B7A46</div>
+          <div class="swatch-cmyk">C78 M0 Y43 K52</div>
+          <div class="swatch-use">Primary · buttons, links, the mark reversed</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#156638;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Forest 600</div>
+          <div class="swatch-hex">#156638</div>
+          <div class="swatch-use">Hover / pressed state for Forest 700</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#DEF3E4;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Forest 100</div>
+          <div class="swatch-hex">#DEF3E4</div>
+          <div class="swatch-use">Tinted panels and section backgrounds</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F2803D;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Orange 500</div>
+          <div class="swatch-hex">#F2803D</div>
+          <div class="swatch-cmyk">C0 M47 Y75 K5</div>
+          <div class="swatch-use">Single accent only · badges, focus ring, never body text</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-label">Neutrals</div>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FBF8F1;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Cream 50</div>
+          <div class="swatch-hex">#FBF8F1</div>
+          <div class="swatch-use">Default page background</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F2EDDF;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Cream 100</div>
+          <div class="swatch-hex">#F2EDDF</div>
+          <div class="swatch-use">Card / panel background on cream</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1C2B22;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Ink 900</div>
+          <div class="swatch-hex">#1C2B22</div>
+          <div class="swatch-cmyk">C35 M0 Y21 K83</div>
+          <div class="swatch-use">Headings, borders, footer background</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#4A5A4F;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Ink 600</div>
+          <div class="swatch-hex">#4A5A4F</div>
+          <div class="swatch-use">Body text</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-label">Use sparingly</div>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FDE3CF;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Orange 100</div>
+          <div class="swatch-hex">#FDE3CF</div>
+          <div class="swatch-use">Tint behind an orange badge, never a full section</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E6E0D0;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Line 200</div>
+          <div class="swatch-hex">#E6E0D0</div>
+          <div class="swatch-use">Hairline dividers and default borders</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#7A897F;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Ink 400</div>
+          <div class="swatch-hex">#7A897F</div>
+          <div class="swatch-use">Muted / caption text</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFFFFF; border-bottom:1px solid var(--line);"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">White</div>
+          <div class="swatch-hex">#FFFFFF</div>
+          <div class="swatch-use">Cards on cream, reversed logo tile</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:34px;">Contrast &middot; measured, not assumed</div>
+    <p class="lede" style="margin-bottom:16px;">
+      Every pairing the palette actually uses, measured against WCAG 2.1. "Body" is the 4.5:1 threshold for
+      normal text; "Large" is 3:1 for text at 24px or 19px bold and above. A pairing that fails is not a
+      matter of taste.
+    </p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable table"><table class="contrast-table">
+      <thead>
+        <tr>
+          <th>Pairing</th><th>Where it is used</th><th>Ratio</th><th>Body</th><th>Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chip" style="background:#FBF8F1;color:#1C2B22;">Ink 900</span></td>
+          <td>Headings on the page</td>
+          <td class="num">13.96</td>
+          <td><span class="verdict pass">AAA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#FBF8F1;color:#4A5A4F;">Ink 600</span></td>
+          <td>Body text on the page</td>
+          <td class="num">6.91</td>
+          <td><span class="verdict pass">AA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#FBF8F1;color:#7A897F;">Ink 400</span></td>
+          <td>Muted / caption text</td>
+          <td class="num">3.47</td>
+          <td><span class="verdict fail">Fails</span></td>
+          <td><span class="verdict pass">AA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#FBF8F1;color:#1B7A46;">Forest 700</span></td>
+          <td>Links and inline accents</td>
+          <td class="num">5.05</td>
+          <td><span class="verdict pass">AA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#FBF8F1;color:#F2803D;">Orange 500</span></td>
+          <td>Orange as text: never do this</td>
+          <td class="num">2.50</td>
+          <td><span class="verdict fail">Fails</span></td>
+          <td><span class="verdict fail">Fails</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#1B7A46;color:#FFFFFF;border-color:#1B7A46;">White</span></td>
+          <td>Primary button label</td>
+          <td class="num">5.36</td>
+          <td><span class="verdict pass">AA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#F2803D;color:#1C2B22;border-color:#F2803D;">Ink 900</span></td>
+          <td>Badge label on orange</td>
+          <td class="num">5.59</td>
+          <td><span class="verdict pass">AA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#1C2B22;color:#FBF8F1;border-color:#1C2B22;">Cream 50</span></td>
+          <td>Footer and worship slides</td>
+          <td class="num">13.96</td>
+          <td><span class="verdict pass">AAA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+        <tr>
+          <td><span class="chip" style="background:#1C2B22;color:#F2803D;border-color:#1C2B22;">Orange 500</span></td>
+          <td>Eyebrow label on a dark slide</td>
+          <td class="num">5.59</td>
+          <td><span class="verdict pass">AA</span></td>
+          <td><span class="verdict pass">AAA</span></td>
+        </tr>
+      </tbody>
+    </table></div>
+
+    <div class="safeguard-note" style="border-left-color: var(--orange-500);">
+      <strong>Two live consequences.</strong> Orange 500 measures 2.50:1 on cream, so it can never carry text
+      at any size, which is the reason for the "single accent only" rule, not a stylistic preference. And
+      Ink 400 measures 3.47:1, which passes for large text but <em>fails</em> for captions at normal size: use
+      it for short labels set large, and reach for Ink 600 for anything a reader has to actually read.
+    </div>
+
+    <div class="print-note">
+      CMYK values above are an approximate sRGB conversion, not a calibrated print profile. Always ask your
+      printer for a proof against these hex values before a large or high-visibility print run, since the same
+      green can shift noticeably between paper stocks and presses.
+    </div>
+  </section>
+
+  <section id="type">
+    <div class="section-head">
+      <h2>Type</h2>
+      <span class="section-num">04 · Typography</span>
+    </div>
+    <p class="lede">
+      Two faces, both free on Google Fonts. Baloo 2 carries every heading, rounded and warm, never used smaller
+      than about 18px. Instrument Sans handles everything you read in a paragraph.
+    </p>
+
+    <div class="type-block">
+      <div class="type-role">
+        <span class="name">Baloo 2</span>
+        <span class="tag">Display / headings</span>
+      </div>
+      <div class="type-sample-display">Worship, witness, and community wellbeing</div>
+      <div class="weight-row">
+        <span>Aa 600</span><span style="font-weight:700;">Aa 700</span><span style="font-weight:800;">Aa 800</span>
+      </div>
+      <div class="type-meta">Headings use 700. Eyebrow labels (below) use 800, uppercase, tracked out.</div>
+      <div class="eyebrow-demo" style="margin-top:14px;">Forest Methodist Circuit</div>
+    </div>
+
+    <div class="type-block">
+      <div class="type-role">
+        <span class="name">Instrument Sans</span>
+        <span class="tag">Body</span>
+      </div>
+      <div class="type-sample-body">
+        We are ten Methodist churches across Waltham Forest, Wanstead and Loughton. Heaven touching earth, we
+        warmly invite you to join us.
+      </div>
+      <div class="weight-row" style="font-family:var(--font-sans);">
+        <span style="font-family:var(--font-sans);">Aa 400</span>
+        <span style="font-family:var(--font-sans);font-weight:600;">Aa 600</span>
+        <span style="font-family:var(--font-sans);font-weight:700;">Aa 700</span>
+      </div>
+      <div class="type-meta">Body copy sets at 400, weight 600&ndash;700 for emphasis inside a paragraph. Never used for headings.</div>
+    </div>
+
+    <div class="print-note" style="border-left-color: var(--accent);">
+      Email and print fallback (neither face is safe to assume installed elsewhere):
+      <code style="font-family:ui-monospace,'SF Mono',Menlo,monospace;">-apple-system, "Segoe UI", Arial, sans-serif</code>.
+      For Word, PowerPoint or Canva documents where neither face is installed, use Arial or Calibri for body copy
+      and keep headings bold rather than trying to substitute a lookalike rounded font.
+    </div>
+  </section>
+
+  <section id="voice">
+    <div class="section-head">
+      <h2>Voice</h2>
+      <span class="section-num">05 · Tone</span>
+    </div>
+    <p class="lede">
+      Warm and direct, never a facilities notice. Written like someone genuinely inviting you in, not like copy
+      generated to fill a section.
+    </p>
+
+    <div class="tagline-block">
+      <div class="tagline">"Heaven touching earth."</div>
+      <div class="tagline-note">The circuit's line; use it as the closing note on print materials and formal introductions, not as a slogan stamped on everything.</div>
+    </div>
+
+    <div class="voice-grid">
+      <div class="voice-card voice-do">
+        <div class="label">Do</div>
+        <p>"We warmly invite you to join us."</p>
+        <p>"Find a church near you."</p>
+      </div>
+      <div class="voice-card voice-dont">
+        <div class="label">Don't</div>
+        <p>"Limited parking is available on-site."</p>
+        <p>"Please note the following facilities apply."</p>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:34px;">In practice</div>
+    <p class="lede" style="margin-bottom:16px;">
+      Three rewrites, taken from copy that has actually appeared on the circuit's own pages. In every case the
+      facts are unchanged; only the order and the register move.
+    </p>
+
+    <div class="rewrite">
+      <div class="rewrite-row before">
+        <div class="rewrite-label">Before</div>
+        <div class="rewrite-text">"Please note this is a no-alcohol venue, and we are unable to take birthday party bookings."</div>
+      </div>
+      <div class="rewrite-row after">
+        <div class="rewrite-label">After</div>
+        <div class="rewrite-text">"Wanstead suits rehearsals, classes and community groups. It's an alcohol-free building, and we don't take birthday parties."</div>
+        <div class="rewrite-why">Both facts survive. The difference is that the space now gets to say what it is <em>for</em> before it says what it isn't, and "we are unable to" becomes plain "we don't".</div>
+      </div>
+    </div>
+
+    <div class="rewrite">
+      <div class="rewrite-row before">
+        <div class="rewrite-label">Before</div>
+        <div class="rewrite-text">"Limited parking is available on-site."</div>
+      </div>
+      <div class="rewrite-row after">
+        <div class="rewrite-label">After</div>
+        <div class="rewrite-text">"There's parking on site, including two accessible bays."</div>
+        <div class="rewrite-why">"Limited" opens on a shortage and tells the reader nothing usable. If parking really is tight, give the number instead: a count is more honest than a warning, and more useful.</div>
+      </div>
+    </div>
+
+    <div class="rewrite">
+      <div class="rewrite-row before">
+        <div class="rewrite-label">Before</div>
+        <div class="rewrite-text">"Applications are invited from suitably qualified candidates for the post of Pastoral Worker."</div>
+      </div>
+      <div class="rewrite-row after">
+        <div class="rewrite-label">After</div>
+        <div class="rewrite-text">"We're looking for a Pastoral Worker to join the team."</div>
+        <div class="rewrite-why">Passive third-person officialese reads as a different organisation from the one that says "we warmly invite you to join us". Pick one voice and hold it, including in the places nobody enjoys writing.</div>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:30px;">Mechanics</div>
+    <div class="principle-grid" style="margin-top:8px;">
+      <div class="principle">
+        <h3>Sentence case, always</h3>
+        <p>"Find a church near you", never "Find A Church Near You". Headings, buttons and nav all follow this;
+        only the small uppercase eyebrow labels are an exception.</p>
+      </div>
+      <div class="principle">
+        <h3>Ampersands in headings</h3>
+        <p>"News &amp; community stories", "Events &amp; community groups". In running body copy, write "and".</p>
+      </div>
+      <div class="principle">
+        <h3>Short nav, fuller heading</h3>
+        <p>The nav says "Venue hire"; the page it opens says "Hall &amp; premises hire". The label has to fit a
+        menu, the heading has room to explain.</p>
+      </div>
+      <div class="principle">
+        <h3>Say "circuit"</h3>
+        <p>Ten churches form a circuit, not a parish or a diocese. It is the word the organisation is actually
+        built on, so it should not be softened away.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="imagery">
+    <div class="section-head">
+      <h2>Imagery</h2>
+      <span class="section-num">06 · Two Lanes</span>
+    </div>
+    <p class="lede">
+      The circuit uses two distinct image treatments, and which one you reach for depends on what is being
+      pictured, not on what happens to be available. Watercolour is used in place of photography for buildings
+      and people to bring a warmth photography doesn't reach on its own; news and events, where the moment
+      itself is the point, are photographed.
+    </p>
+
+    <div class="lane">
+      <img class="lane-fig" src="images/imagery-watercolour.jpg" alt="Watercolour illustration of Wanstead Methodist Church">
+      <div class="lane-body">
+        <span class="lane-tag wc">Lane 1 &middot; Watercolour</span>
+        <h3>Churches, and portraits of the team</h3>
+        <div class="lane-use">Church pages &middot; the circuit map &middot; staff headshots &middot; anywhere a place or person is the subject</div>
+        <p>
+          Loose ink linework under transparent washes, with the white of the paper left showing through rather
+          than painted over. Colour is saturated but airy, edges are soft, and small blooms and runs are kept
+          rather than tidied away. Each of the ten churches already has one.
+        </p>
+        <p>
+          Staff headshots follow this same treatment rather than photography. That keeps the team visually of a
+          piece with the buildings they serve, sidesteps the awkward mix of ten differently-lit phone snaps, and
+          means nobody is asked to sit for a photograph they would rather not.
+        </p>
+      </div>
+    </div>
+
+    <div class="lane">
+      <img class="lane-fig" src="images/imagery-photography.jpg" alt="Photograph of a congregation singing from hymn books">
+      <div class="lane-body">
+        <span class="lane-tag photo">Lane 2 &middot; Photography</span>
+        <h3>Life as it actually happens</h3>
+        <div class="lane-use">Homepage hero &middot; news articles &middot; events &middot; social posts</div>
+        <p>
+          Natural light, candid moments mid-service or mid-conversation, genuine expressions. Framed wide enough
+          to show the space and the people in it together. Real congregations wherever possible.
+        </p>
+        <p>
+          Avoid heavy filters or colour grading that fight the forest green and orange palette, and posed
+          straight-to-camera lineups. Stock photography is fine when a real congregation shot isn't available,
+          but it has to be chosen and, where needed, edited carefully: the homepage hero is a stock image
+          brought in line with this palette, not a generic photo library shot dropped in as-is.
+        </p>
+      </div>
+    </div>
+
+    <div class="group-label" style="margin-top:28px;">Never mix the two in one frame</div>
+    <p class="lede" style="margin-bottom:18px;">
+      A watercolour church behind a photographed person (or the reverse) reads as a mistake. If a layout needs
+      both a place and a person in the same image, paint both or photograph both.
+    </p>
+
+    <div class="group-label">Cropping for a circular frame</div>
+    <p class="lede" style="margin-bottom:0;">
+      Social avatars, the circuit mark, and the staff headshots are all circular. Leave generous headroom above
+      and either side. Faces cropped tight against the edge of a circle read as cut off in a way they don't in a
+      square or rectangle, and a watercolour's soft outer edge needs a little more room still, since the wash
+      fades rather than stopping at a hard line.
+    </p>
+
+    <div class="safeguard-note">
+      <strong>Safeguarding comes before branding.</strong> Never publish an identifiable photo of a child or a
+      vulnerable adult, on the website, in print, or on social media, without documented consent already on
+      file, in line with the circuit's own safeguarding policy. When in doubt, don't post it, and ask the
+      church's safeguarding officer first. Where a photograph would need consent the circuit doesn't have, the
+      watercolour lane is often the better answer rather than a workaround: a painted scene carries the warmth
+      without making anyone identifiable.
+    </div>
+  </section>
+
+  <section id="layout">
+    <div class="section-head">
+      <h2>Layout</h2>
+      <span class="section-num">07 · Grid &amp; Space</span>
+    </div>
+    <p class="lede">
+      One spacing scale, one type scale, one measure. Everything the circuit produces should be built from
+      these numbers rather than from whatever looked about right, because consistent spacing is most of what
+      makes unrelated pages feel like one organisation.
+    </p>
+
+    <div class="group-label">The spacing scale</div>
+    <p class="lede" style="margin-bottom:10px;">
+      A 4px base, doubling loosely. Use a step from this scale for every margin, padding and gap. Steps 1&ndash;4
+      space things <em>within</em> a component; 5&ndash;7 separate components; 8&ndash;10 separate whole sections.
+    </p>
+    <div class="spacing-row">
+      <div><div class="bar" style="height:4px;"></div><div class="lbl">4</div></div>
+      <div><div class="bar" style="height:8px;"></div><div class="lbl">8</div></div>
+      <div><div class="bar" style="height:12px;"></div><div class="lbl">12</div></div>
+      <div><div class="bar" style="height:16px;"></div><div class="lbl">16</div></div>
+      <div><div class="bar" style="height:24px;"></div><div class="lbl">24</div></div>
+      <div><div class="bar" style="height:32px;"></div><div class="lbl">32</div></div>
+      <div><div class="bar" style="height:48px;"></div><div class="lbl">48</div></div>
+      <div><div class="bar" style="height:64px;"></div><div class="lbl">64</div></div>
+      <div><div class="bar" style="height:96px;"></div><div class="lbl">96</div></div>
+      <div><div class="bar" style="height:128px;"></div><div class="lbl">128</div></div>
+    </div>
+
+    <div class="group-label" style="margin-top:30px;">The type scale</div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable table"><table class="contrast-table">
+      <thead>
+        <tr><th>Role</th><th>Size</th><th>Face &amp; weight</th><th>Used for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Hero</strong></td><td class="num">40&ndash;72px</td><td>Baloo 2 700</td><td>Home page opening statement only</td></tr>
+        <tr><td><strong>H1</strong></td><td class="num">48px</td><td>Baloo 2 700</td><td>One per page, the page's own title</td></tr>
+        <tr><td><strong>H2</strong></td><td class="num">34px</td><td>Baloo 2 700</td><td>Major section headings</td></tr>
+        <tr><td><strong>H3</strong></td><td class="num">22px</td><td>Baloo 2 700</td><td>Card titles, sub-sections</td></tr>
+        <tr><td><strong>Lead</strong></td><td class="num">19px</td><td>Instrument Sans 400</td><td>The standfirst under a page title</td></tr>
+        <tr><td><strong>Body</strong></td><td class="num">16px</td><td>Instrument Sans 400</td><td>Everything a reader reads at length</td></tr>
+        <tr><td><strong>Small</strong></td><td class="num">14px</td><td>Instrument Sans 400</td><td>Secondary detail, list meta</td></tr>
+        <tr><td><strong>Caption</strong></td><td class="num">12.5px</td><td>Instrument Sans 400</td><td>Image credits, fine print</td></tr>
+        <tr><td><strong>Eyebrow</strong></td><td class="num">16px</td><td>Baloo 2 800, uppercase</td><td>The small label above a heading</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="group-label" style="margin-top:30px;">Measure</div>
+    <p class="measure-demo">
+      Running text sits between 60 and 70 characters a line. This paragraph is set at that measure so you can
+      see it. Wider than about 75 and the eye loses its place returning to the left edge; much narrower and the
+      text starts to fragment. On a wide screen this means body copy does not fill the window; that empty
+      space to the right is doing a job.
+    </p>
+
+    <div class="group-label" style="margin-top:30px;">Grid</div>
+    <p class="lede" style="margin-bottom:8px;">
+      Twelve columns, 24px gutters, 1400px maximum width. Most content sits in a narrower column than the grid
+      allows: directory listings run to eight columns, running text to six or seven.
+    </p>
+    <div class="grid-demo">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="group-label" style="margin-top:30px;">Corners and shadows</div>
+    <div class="principle-grid" style="margin-top:8px;">
+      <div class="principle">
+        <h3>Three radii, no others</h3>
+        <p>4px for inputs and small chips, 10px for cards, 20px for large feature panels, and a full pill for
+        buttons and badges. Nothing in between.</p>
+      </div>
+      <div class="principle">
+        <h3>Two shadow families</h3>
+        <p>A soft ambient shadow for cards that sit on the page, and the hard 4px offset for the sticker
+        treatment. Never both on one element.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="applied-style">
+    <div class="section-head">
+      <h2>Applied Style</h2>
+      <span class="section-num">08 · Digital Components</span>
+    </div>
+    <p class="lede">
+      The site's chunky, hand-drawn feel comes from one recurring device: a 2px ink border with a hard,
+      unblurred offset shadow, never a soft drop shadow. This is a digital signature for buttons, badges and
+      cards; print materials use the flatter letterhead style shown in the next section instead.
+    </p>
+
+    <div class="component-row">
+      <div class="btn btn-primary">Find a church near you</div>
+      <div class="btn btn-secondary">Circuit preaching plan</div>
+      <div class="badge-pill">Worship together</div>
+    </div>
+    <div class="component-note">Pill radius, 2px ink-900 border, 4px hard offset shadow (6px on hover, collapses to 1px on press). Never a blurred drop shadow.</div>
+  </section>
+
+  <section id="beyond-the-website">
+    <div class="section-head">
+      <h2>Beyond the Website</h2>
+      <span class="section-num">09 · Every Other Surface</span>
+    </div>
+    <p class="lede">
+      Every place this identity needs to travel: email, print, social media, worship slides, physical signage
+      and merchandise. Most of these fall back to system fonts and flatter, simpler shapes than the website
+      uses, since none of them can be trusted to load a custom typeface or render a hard offset shadow correctly.
+    </p>
+
+    <div class="applied-card">
+      <div class="applied-label">Email signature</div>
+      <div class="applied-body">
+        <div class="mock-row">
+          <div class="email-sig">
+            <div class="sig-mark"><img src="images/logo-green.png" alt=""></div>
+            <div>
+              <div class="sig-name">Jane Smith</div>
+              <div class="sig-role">Circuit Administrator</div>
+              <div class="sig-org">Forest Methodist Circuit</div>
+              <div class="sig-contact"><a href="#">office@forestcircuit.org.uk</a> &middot; <a href="#">forestcircuit.co.uk</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="code-box" style="margin-top:18px;">
+          &lt;<span class="tag">table</span> <span class="attr">style</span>=<span class="str">"font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#333"</span>&gt;<br>
+          &nbsp;&lt;<span class="tag">tr</span>&gt;&lt;<span class="tag">td</span> <span class="attr">style</span>=<span class="str">"padding-right:16px"</span>&gt;<br>
+          &nbsp;&nbsp;&lt;<span class="tag">img</span> <span class="attr">src</span>=<span class="str">"[hosted logo-green.png]"</span> <span class="attr">width</span>=<span class="str">"48"</span>&gt;<br>
+          &nbsp;&lt;/<span class="tag">td</span>&gt;&lt;<span class="tag">td</span>&gt;<br>
+          &nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="attr">style</span>=<span class="str">"font-weight:700;font-size:15px;color:#1c2b22"</span>&gt;Jane Smith&lt;/<span class="tag">div</span>&gt;<br>
+          &nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="attr">style</span>=<span class="str">"color:#4a5a4f"</span>&gt;Circuit Administrator&lt;/<span class="tag">div</span>&gt;<br>
+          &nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="attr">style</span>=<span class="str">"font-weight:700;color:#1b7a46;margin-top:8px"</span>&gt;Forest Methodist Circuit&lt;/<span class="tag">div</span>&gt;<br>
+          &nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="attr">style</span>=<span class="str">"color:#4a5a4f"</span>&gt;office@forestcircuit.org.uk &middot; forestcircuit.co.uk&lt;/<span class="tag">div</span>&gt;<br>
+          &nbsp;&lt;/<span class="tag">td</span>&gt;&lt;/<span class="tag">tr</span>&gt;&lt;/<span class="tag">table</span>&gt;
+        </div>
+        <p class="component-note" style="margin-top:12px;">Paste this into Gmail/Outlook's signature HTML editor once the logo is hosted somewhere with a stable URL, e.g. forestcircuit.co.uk/images/logo-green.png.</p>
+      </div>
+    </div>
+
+    <div class="applied-card">
+      <div class="applied-label">Print letterhead &middot; layout only</div>
+      <div class="applied-body">
+        <div class="mock-row">
+          <div class="print-mock">
+            <div class="p-mark"></div>
+            <div class="p-line w60" style="margin-top:14px;"></div>
+            <div class="p-line w80"></div>
+            <div class="p-line w80"></div>
+            <div class="p-line w40"></div>
+            <div class="p-accent"></div>
+          </div>
+          <p style="max-width:40ch;">
+            Mark top-left in ink on white or cream stock; never the reversed white mark on paper. Body copy in
+            Instrument Sans (or Arial if unavailable), a single orange rule as the only colour accent below the
+            footer block.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="applied-card">
+      <div class="applied-label">Social media avatar &amp; cover</div>
+      <div class="applied-body">
+        <div class="mock-row">
+          <div class="avatar-mock"><img src="images/logo-white.png" alt=""></div>
+          <div class="cover-mock"><img src="images/logo-white.png" alt=""><span>Forest Methodist Circuit</span></div>
+          <p style="max-width:34ch;">
+            Avatar: reversed mark centred on solid Forest 700, with the same clear space rule as everywhere
+            else, since most platforms crop avatars into a circle themselves, so don't pre-crop tightly. Cover images
+            use the mark small and left- or right-anchored, never stretched across the full width.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="applied-card">
+      <div class="applied-label">Worship slides &amp; presentations</div>
+      <div class="applied-body">
+        <div class="mock-row">
+          <div class="slide-mock">
+            <div class="sl-eyebrow">Hymn 348</div>
+            <div class="sl-title">Great is Thy faithfulness</div>
+          </div>
+          <p style="max-width:34ch;">
+            Ink 900 background, cream text, Baloo 2 for titles only, since it needs to read from the back of a
+            hall. Orange is a poor text colour on a dark ground; keep it to a small eyebrow label or underline,
+            never a full line of lyrics.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="applied-card">
+      <div class="applied-label">Noticeboards, banners &amp; pull-up stands</div>
+      <div class="applied-body">
+        <div class="mock-row">
+          <div class="board-mock">
+            <img src="images/logo-white.png" alt="">
+            <span>Wanstead Methodist Church</span>
+          </div>
+          <p style="max-width:34ch;">
+            Reversed mark on forest green is the most weatherproof combination outdoors, high contrast, and
+            forgiving of a modest print run. Check the mark is legible from ordinary pavement distance, not
+            just up close, before a banner goes to print.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="applied-card">
+      <div class="applied-label">Merchandise</div>
+      <div class="applied-body">
+        <p>
+          For t-shirts, tote bags or pens at youth and community events, use a single-colour reproduction of the
+          mark, ink or white depending on the garment, rather than the full palette. Multi-colour printing is
+          usually the most expensive part of a small merchandise run, and the mark was designed as a single
+          continuous line specifically so it survives being reduced to one colour.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="files">
+    <div class="section-head">
+      <h2>Files</h2>
+      <span class="section-num">10 · Assets on File</span>
+    </div>
+    <p class="lede">
+      Everything below already exists in the website's codebase (<code style="font-family:ui-monospace,'SF Mono',Menlo,monospace;">public/images/</code> and <code style="font-family:ui-monospace,'SF Mono',Menlo,monospace;">public/fonts/</code>) and can be pulled directly from there.
+    </p>
+
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable table"><table class="asset-table">
+      <thead>
+        <tr><th>File</th><th>What it is</th><th>Use for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="fname">logo-ink.png</td><td>Mark, ink on transparent</td><td>Anything on a light background</td></tr>
+        <tr><td class="fname">logo-white.png</td><td>Mark, white on transparent</td><td>Anything on forest green or a dark ground</td></tr>
+        <tr><td class="fname">logo-green.png</td><td>Mark, forest green (#1b7a46) on transparent</td><td>Email signatures on a white background only</td></tr>
+        <tr><td class="fname">og-share.png</td><td>1200&times;630 share card, white mark on forest green</td><td>Social link previews</td></tr>
+        <tr><td class="fname">icon.png / favicon.ico</td><td>White mark on forest green, browser-tab sized</td><td>Browser tabs, app icons</td></tr>
+        <tr><td class="fname">Baloo2-Variable.woff2</td><td>Variable weight 600&ndash;800</td><td>Web headings only</td></tr>
+        <tr><td class="fname">InstrumentSans-Variable.woff2</td><td>Variable weight 400&ndash;700</td><td>Web body text only</td></tr>
+        <tr><td class="fname">fmc-logo-motion.mp4 / .gif / -transparent.webm</td><td>The mark drawing itself on, 2s loop</td><td>Video intros, presentation openers, social</td></tr>
+        <tr><td class="fname">wanstead.jpg, loughton.jpg, &hellip;</td><td>Watercolour illustration, one per church (ten in total)</td><td>Church pages, print, anywhere a building is shown</td></tr>
+        <tr><td class="fname">hero-map.png</td><td>Watercolour map of the circuit's ten churches</td><td>Homepage, print overview of the circuit</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="keeping-this-current">
+    <div class="section-head">
+      <h2>Keeping This Current</h2>
+      <span class="section-num">11 · Ownership</span>
+    </div>
+    <p class="lede">
+      A brand guide only works if someone keeps it true. This one lives as a private link, not a printed
+      binder, so it's simple to correct the moment something changes.
+    </p>
+    <div class="gov-row">
+      <div class="gov-item">
+        <span class="gov-num">01</span>
+        <p>One named role, not necessarily one named person, is responsible for approving anything that
+        deviates from this guide: a new colour, a redrawn mark, a tagline change.</p>
+      </div>
+      <div class="gov-item">
+        <span class="gov-num">02</span>
+        <p>Anyone producing something official on the circuit's behalf, a poster, a pull-up banner, a
+        merchandise order, should be pointed to this document before it goes to print, not after.</p>
+      </div>
+      <div class="gov-item">
+        <span class="gov-num">03</span>
+        <p>When the website's own design tokens change, this document should change with them: it's
+        compiled from the same colours, fonts and logo files the site itself uses, so the two should never drift
+        apart.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Forest Methodist Circuit &middot; Brand Guidelines</span>
+    <span>Compiled from the circuit's own identity assets, forestcircuit.co.uk</span>
+  </footer>
+
+</div>
+
+</main>
+
+<button class="totop" type="button" aria-label="Back to top">&#8593;</button>
+
+<footer class="sitefoot">
+  <div class="sitefoot-inner">
+    <span>Forest Methodist Circuit &middot; Brand Guidelines</span>
+    <span>Designed &amp; developed by <a href="https://satsuma.studio/" target="_blank" rel="noreferrer">Satsuma</a></span>
+  </div>
+</footer>
+
+<script>
+// Progressive enhancement only: every one of these features is additive, so
+// the document is complete and readable with JavaScript switched off.
+(function () {
+  'use strict';
+
+  var root = document.documentElement;
+
+  /* ---- theme ----------------------------------------------------------
+     The stylesheet already defines [data-theme] overrides for both
+     directions, so an explicit choice costs no extra CSS. Default stays
+     "system" until someone actually picks a side. */
+  var KEY = 'fc-brand-theme';
+  var btn = document.querySelector('[data-theme-toggle]');
+  function stored() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function systemDark() { return matchMedia('(prefers-color-scheme: dark)').matches; }
+  function apply(mode) {
+    if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode);
+    else root.removeAttribute('data-theme');
+    if (btn) {
+      var dark = mode === 'dark' || (mode !== 'light' && systemDark());
+      btn.textContent = dark ? '☀' : '☾';
+      btn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+  }
+  apply(stored());
+  if (btn) {
+    btn.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') === 'dark' ||
+                 (!root.hasAttribute('data-theme') && systemDark());
+      var next = dark ? 'light' : 'dark';
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+      apply(next);
+    });
+  }
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
+    if (!stored()) apply(null);
+  });
+
+  /* ---- scrollspy ---- */
+  var links = [].slice.call(document.querySelectorAll('.sitebar nav a'));
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var sections = [].slice.call(document.querySelectorAll('.wrap > section[id]'));
+  var lastActive = null;
+  /* Picking the first *intersecting* section marked the wrong one: a
+     section tailing off the top of the screen is still intersecting, so it
+     beat the one actually being read. Walking backwards for the last
+     section whose top has passed under the bar names the current one. */
+  function syncSpy() {
+    if (!sections.length) return;
+    var line = 92; // just below the sticky bar
+    var current = sections[0].id;
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].getBoundingClientRect().top <= line) { current = sections[i].id; break; }
+    }
+    // At the very bottom the last section may never cross the line.
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      current = sections[sections.length - 1].id;
+    }
+    if (current === lastActive) return;
+    lastActive = current;
+    links.forEach(function (a) { a.classList.remove('is-active'); });
+    var link = byId[current];
+    if (!link) return;
+    link.classList.add('is-active');
+    // The collapsed trigger doubles as a position readout, so the reader
+    // always knows where they are without opening anything.
+    var cb = document.querySelector('.contents-btn');
+    if (cb) {
+      var num = link.querySelector('.n');
+      var numEl = cb.querySelector('.cb-num');
+      var labelEl = cb.querySelector('.cb-label');
+      if (numEl && num) numEl.textContent = num.textContent.trim();
+      if (labelEl) labelEl.textContent = link.textContent.replace(/^\s*\d+\s*/, '').trim();
+    }
+  }
+
+  /* ---- contents menu ----
+     Collapsed below the width where the inline strip genuinely fits. The
+     hidden attribute is only ever set while collapsed, so widening the
+     window can never leave the nav stuck invisible. */
+  var cbtn = document.querySelector('.contents-btn');
+  var navEl = document.getElementById('sectionnav');
+  // Always collapsed. See the note on .sitebar nav in the stylesheet.
+  var collapsed = matchMedia('(min-width: 0px)');
+
+  function closeMenu() {
+    if (!cbtn || !navEl) return;
+    navEl.hidden = true;
+    cbtn.setAttribute('aria-expanded', 'false');
+  }
+  function openMenu() {
+    if (!cbtn || !navEl) return;
+    navEl.hidden = false;
+    cbtn.setAttribute('aria-expanded', 'true');
+    var active = navEl.querySelector('a.is-active') || navEl.querySelector('a');
+    if (active) active.focus({ preventScroll: true });
+  }
+  function syncMode() {
+    if (!navEl) return;
+    if (collapsed.matches) closeMenu();
+    else { navEl.hidden = false; if (cbtn) cbtn.setAttribute('aria-expanded', 'false'); }
+  }
+  if (cbtn && navEl) {
+    syncMode();
+    collapsed.addEventListener('change', syncMode);
+    cbtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      navEl.hidden ? openMenu() : closeMenu();
+    });
+    navEl.addEventListener('click', function (e) {
+      if (e.target.closest('a') && collapsed.matches) closeMenu();
+    });
+    document.addEventListener('click', function (e) {
+      if (!collapsed.matches || navEl.hidden) return;
+      if (!navEl.contains(e.target) && e.target !== cbtn) closeMenu();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && collapsed.matches && !navEl.hidden) {
+        closeMenu();
+        cbtn.focus();
+      }
+    });
+  }
+
+  /* ---- reading progress ---- */
+  var bar = document.querySelector('.progress');
+  var top = document.querySelector('.totop');
+  function onScroll() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = h > 0 ? (window.scrollY / h) * 100 : 0;
+    if (bar) bar.style.width = pct + '%';
+    if (top) top.classList.toggle('show', window.scrollY > 600);
+    syncSpy();
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', onScroll);
+  onScroll();
+  if (top) {
+    top.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      var m = document.querySelector('.sitebar .mark');
+      if (m) m.focus({ preventScroll: true });
+    });
+  }
+
+  /* ---- copy helpers ----
+     writeText needs a secure context; on file:// or plain http it is absent,
+     so fall back to a hidden textarea rather than failing silently. */
+  function legacyCopy(text) {
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:absolute;left:-9999px;top:0';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      ok ? resolve() : reject(new Error('copy unavailable'));
+    });
+  }
+  // writeText does not merely go missing on an insecure origin, it also
+  // REJECTS when the document is not focused or the permission is denied.
+  // Catching only the missing case left a click that silently did nothing,
+  // so a rejection falls through to the textarea path as well.
+  function copy(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).catch(function () {
+        return legacyCopy(text);
+      });
+    }
+    return legacyCopy(text);
+  }
+  function flash(el, cls) {
+    el.classList.add(cls);
+    setTimeout(function () { el.classList.remove(cls); }, 1400);
+  }
+
+  // Hex values become buttons so they can be copied by click or keyboard.
+  [].slice.call(document.querySelectorAll('.swatch-hex')).forEach(function (el) {
+    var hex = el.textContent.trim();
+    if (!/^#[0-9a-f]{3,8}$/i.test(hex)) return;
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = el.className;
+    b.textContent = hex;
+    b.title = 'Copy ' + hex;
+    b.addEventListener('click', function () {
+      copy(hex).then(function () {
+        flash(b, 'copied');
+      }, function () {
+        // Both paths refused. Select the value so it can still be copied
+        // by hand rather than leaving a button that appears to do nothing.
+        var r = document.createRange();
+        r.selectNodeContents(b);
+        var s = getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+      });
+    });
+    el.replaceWith(b);
+  });
+
+  // The email-signature block is meant to be pasted, so give it one button
+  // rather than asking anyone to select 12 lines of HTML by hand.
+  [].slice.call(document.querySelectorAll('.code-box')).forEach(function (box) {
+    var wrap = document.createElement('div');
+    wrap.className = 'code-wrap';
+    box.parentNode.insertBefore(wrap, box);
+    wrap.appendChild(box);
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'copy-code';
+    b.textContent = 'Copy';
+    b.addEventListener('click', function () {
+      copy(box.innerText.trim()).then(function () {
+        b.textContent = 'Copied';
+        setTimeout(function () { b.textContent = 'Copy'; }, 1400);
+      }, function () {
+        b.textContent = 'Select all';
+        var r = document.createRange();
+        r.selectNodeContents(box);
+        var s = getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+        setTimeout(function () { b.textContent = 'Copy'; }, 2200);
+      });
+    });
+    wrap.appendChild(b);
+  });
+})();
+</script>
+</body>
+</html>
